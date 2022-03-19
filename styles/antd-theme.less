@@ -1,0 +1,233 @@
+@import '~antd/dist/antd.less'; // Import Ant Design styles by less entry
+// @import "fonts.less";
+// override Antd variables
+
+@font-family: 'AvenirNext-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Quicksand-Regular';
+
+@font-family-bold: 'AvenirNext-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Quicksand-SemiBold';
+
+@font-family-demi: 'AvenirNext-Demi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+
+// colors
+@primary-color: #4caf50;
+@success-color: #52c41a; // success state color
+@warning-color: #faad14; // warning state color
+@error-color: #f5222d; // error state color
+@text-grey-color : #767676; // grey text color
+@text-color: #363636; // major text color
+@info-color: #1890ff;
+
+// radius
+@border-radius-base: 4px;
+
+// Small screen / mobile
+@screen-xs: 480px;
+@screen-xs-max: 479px;
+// Small screen / tablet
+@screen-sm: 576px;
+@screen-sm-max: 575px;
+// Medium screen / desktop
+@screen-md: 768px;
+@screen-md-max: 767px;
+// Large screen / wide desktop
+@screen-lg: 992px;
+@screen-lg-max: 991px;
+// Extra large screen / full hd
+@screen-xl: 1200px;
+@screen-xl-max: 1199px;
+// Extra extra large screen / large desktop
+@screen-xxl: 1600px;
+@screen-xxl-max: 1599px;
+
+.ant-btn-primary {
+    text-shadow: none;
+}
+
+.ant-btn-primary:focus {
+    background-color: @primary-color;
+    border-color: @primary-color;
+}
+
+.ant-btn-lg {
+    height: 50px;
+    padding: 0 24px;
+}
+
+a.ant-btn-lg {
+    line-height: 50px;
+}
+
+.ant-btn-sm {
+    font-size: 12px;
+}
+
+.ant-btn {
+    font-family: @font-family;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ant-btn-ghost {
+    color: @primary-color;
+    border-color: @primary-color;
+}
+
+.ant-select-dropdown > div {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.ant-input-lg,
+.ant-select-lg {
+    height: 40px;
+}
+
+.ant-slider {
+    .ant-slider-rail,
+    .ant-slider-track,
+    .ant-slider-step {
+        height: 6px;
+    }
+
+    .ant-slider-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.ant-form-item-label > label {
+    color: #666666;
+}
+
+/* Responsive Screen */
+@media (min-width: @screen-sm) {
+    .visible-sm {
+        display: block !important;
+    }
+    .row.visible-sm {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: -webkit-box !important;
+        display: flex !important;
+    }
+    table.visible-sm {
+        display: table !important;
+    }
+    tr.visible-sm {
+        display: table-row !important;
+    }
+    th.visible-sm,
+    td.visible-sm {
+        display: table-cell !important;
+    }
+    .flex-column-sm {
+        flex-direction: column;
+    }
+}
+@media (min-width: @screen-md) {
+    .visible-md {
+        display: block !important;
+    }
+    .row.visible-md {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: -webkit-box !important;
+        display: flex !important;
+    }
+    table.visible-md {
+        display: table !important;
+    }
+    tr.visible-md {
+        display: table-row !important;
+    }
+    th.visible-md,
+    td.visible-md {
+        display: table-cell !important;
+    }
+    .flex-column-md {
+        flex-direction: column;
+    }
+}
+@media (min-width: @screen-lg) {
+    .visible-lg {
+        display: block !important;
+    }
+    .row.visible-lg {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: -webkit-box !important;
+        display: flex !important;
+    }
+    table.visible-lg {
+        display: table !important;
+    }
+    tr.visible-lg {
+        display: table-row !important;
+    }
+    th.visible-lg,
+    td.visible-lg {
+        display: table-cell !important;
+    }
+    .flex-column-lg {
+        flex-direction: column;
+    }
+}
+@media (min-width: @screen-xl) {
+    .visible-xl {
+        display: block !important;
+    }
+    .row.visible-xl {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: -webkit-box !important;
+        display: flex !important;
+    }
+    table.visible-xl {
+        display: table !important;
+    }
+    tr.visible-xl {
+        display: table-row !important;
+    }
+    th.visible-xl,
+    td.visible-xl {
+        display: table-cell !important;
+    }
+    .flex-column-xl {
+        flex-direction: column;
+    }
+}
+
+.hidden {
+    display: none;
+}
+@media (min-width: @screen-sm) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@media (min-width: @screen-md) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: @screen-lg) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+@media (min-width: @screen-xl) {
+    .hidden-xl {
+        display: none !important;
+    }
+}
